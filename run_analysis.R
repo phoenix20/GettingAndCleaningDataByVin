@@ -1,9 +1,6 @@
-loadDataSet <- function(destFolder){
+startAnalysis <- function(){
       
-      #### POINT TO THE DIRECTORY WHERE ALL THE FILES ARE KEPT ######################################################
       
-      oldDirectory <- getwd()
-      setwd(destFolder)
   
       #### READ ALL THE FILES INTO R ###############################################################################    
       activity_labels <- read.table("./activity_labels.txt") 
@@ -53,8 +50,7 @@ loadDataSet <- function(destFolder){
       dir.create("PROCESSED DATA")
       write.table(processedTable,file = "./PROCESSED DATA/processedTable.csv",sep=",",row.names = FALSE)
       
-      ### POINT BACK TO THE OLD DIRECTORY ###########################################################
-      setwd(oldDirectory)
+      
       
       #### RETURNING THE TABLE AFTER THE ANALYSIS ###################################################
       return(processedTable)

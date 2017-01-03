@@ -33,10 +33,6 @@ their name and the result was stored in X_combined_filtered.
 10 The processedTable was returned.
 
 
-#ABOUT THE SCRIPT 
-The script has a function called loadDataSet() which takes one argument destFolder i.e location
-where the data set is located.
-
 #VARIABLES 
 activity_labels-has the activity descriptions 
 
